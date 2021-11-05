@@ -1,5 +1,5 @@
 tts/
-home-assistant.log
+home-assistant.log*
 secrets.yaml
 .HA_VERSION
 *.db*
