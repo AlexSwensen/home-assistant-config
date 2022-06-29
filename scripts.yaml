@@ -1,0 +1,46 @@
+turn_office_lights_on:
+  alias: Turn Office Lights On
+  sequence:
+  - type: turn_on
+    device_id: c7de38cab802654354a6366678074592
+    entity_id: light.office_lamp_top
+    domain: light
+    brightness_pct: 100
+  - type: turn_on
+    device_id: 9936dd23dda3e932e1cfc682716d818a
+    entity_id: light.office_lamp_bottom
+    domain: light
+    brightness_pct: 100
+  - type: turn_on
+    device_id: f2b4bd32b86afdd461c4cbc0424dc93b
+    entity_id: light.office_lamp_left
+    domain: light
+    brightness_pct: 100
+  - type: turn_on
+    device_id: 6c89f87a580419f86a9a04d33d8823e1
+    entity_id: light.desk_lamp_right
+    domain: light
+    brightness_pct: 100
+  mode: single
+  icon: mdi:lightbulb-on
+turn_off_office_lights:
+  alias: Turn Off Office Lights
+  sequence:
+  - type: turn_off
+    device_id: 9936dd23dda3e932e1cfc682716d818a
+    entity_id: light.office_lamp_bottom
+    domain: light
+  - type: turn_off
+    device_id: c7de38cab802654354a6366678074592
+    entity_id: light.office_lamp_top
+    domain: light
+  - type: turn_off
+    device_id: f2b4bd32b86afdd461c4cbc0424dc93b
+    entity_id: light.office_lamp_left
+    domain: light
+  - type: turn_off
+    device_id: 6c89f87a580419f86a9a04d33d8823e1
+    entity_id: light.desk_lamp_right
+    domain: light
+  mode: single
+  icon: mdi:lightbulb-outline
