@@ -5,11 +5,6 @@ default_config:
 tts:
   - platform: google_translate
 
-# octoprint:
-#   - host: !secret octopi_host
-#     api_key: !secret octopi_key
-#     name: Ender 3 V2
-
 group: !include groups.yaml
 automation: !include automations.yaml
 script: !include scripts.yaml
